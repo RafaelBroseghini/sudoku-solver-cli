@@ -1,0 +1,6 @@
+#!/bin/bash
+# This assumes you run the script with the puzzle as a command-line argument like this,
+# solve sudoku.txt
+python3 sudoku_clauses.py $1 > sudoku.dimacs
+./minisat sudoku.dimacs sudoku.sol
+cat sudoku.sol | python3 displaysolution.py
