@@ -1,0 +1,4 @@
+.ssh*
+.sudo*
+sudoku.dimacs
+sudokudim
